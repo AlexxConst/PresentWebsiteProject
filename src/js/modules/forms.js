@@ -39,8 +39,8 @@ const forms = () => {
             item.files[0].name.split('.')[0].length > 6
                 ? (dots = '...')
                 : (dots = '.');
-            const arr = item.files[0].name.split('.');
             const name = arr[0].substring(0, 6) + dots + arr[1];
+            const arr = item.files[0].name.split('.');
             item.previousElementSibling.textContent = name;
         });
     });
